@@ -2313,6 +2313,24 @@ Si por algún motivo no podés asistir, te pido que me avises. ¡Te esperamos!</
 </div>
 <div class="note">💡 Si responde en cualquier momento: retomá la charla donde estaba (Etapa 2 o 3, según lo que diga). Si no responde, queda en pausa.</div>
 </div></div>
+<div class="mc inf" id="mc_5pausa" data-kw="pausa pausado retomar mas adelante consulta contactos">
+<button class="mc-btn" onclick="togMc('mc_5pausa')"><span class="mt">📋 Pausa · retomar cuando llegó el momento</span><span class="mc-chev">▾</span></button>
+<div class="mc-body">
+<div class="when">Para quien dijo que lo veían más adelante y ya llegó el momento de retomar.</div>
+<div class="var">
+<div class="txt">Hola [NOMBRE], soy Cami, del equipo del Dr. Despontin. Hace un tiempo hablamos de tu consulta por [PROCEDIMIENTO] y quedamos en retomarlo más adelante. ¿Cómo estás? Si ya es un buen momento, vemos los días que el Dr. tiene disponibles para que agendemos una consulta y lo conozcas.</div>
+<button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
+</div>
+</div></div>
+<div class="mc esp" id="mc_5perd" data-kw="perdido perdida nutricion contenido reactivar dormida">
+<button class="mc-btn" onclick="togMc('mc_5perd')"><span class="mt">⏳ Nutrición de perdidos · cada 3, 6 o 12 meses</span><span class="mc-chev">▾</span></button>
+<div class="mc-body">
+<div class="when">Para quien quedó perdida. Se manda cada 3 meses si dejó de responder, cada 6 si fue por lo económico y cada 12 si eligió otro lugar, hasta 2 años.</div>
+<div class="var">
+<div class="txt">Hola [NOMBRE], soy Cami, del equipo del Dr. Despontin. Hace un tiempo hablamos sobre tu [PROCEDIMIENTO] y me acordé de vos. Te paso [CONTENIDO: video o nota del Dr. sobre ese procedimiento], por si te sirve. Si querés retomarlo, avisame y vemos fechas para una consulta. Y si preferís que no te escribamos más, decime y no hay problema.</div>
+<button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
+</div>
+</div></div>
 </div></div>
 <div class="stage" id="s6">
 <button class="stage-btn" onclick="togStage('s6')">
@@ -3474,7 +3492,7 @@ Cualquier duda que te vaya surgiendo, escribime.</div>
 <div class="when">Etapa: 🌱 Nutriendo – Fecha Futura, cuando dice "🎯 Llegó la Fecha".</div>
 <div class="var">
 <div class="txt">Hola [NOMBRE], ¿cómo estás? Soy Cami, del equipo del Dr. Despontin. Hace [TIEMPO] hablamos de que querías operarte en [ÉPOCA] y me quedé pensando si lo seguías teniendo en mente.
-Si ya querés avanzar, vemos qué fechas hay disponibles. ¿Lo retomamos?</div>
+Si ya querés avanzar, vemos qué fechas hay disponibles para cirugía o podés tener una nueva consulta con el Dr. ¿Lo retomamos?</div>
 <button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
 </div>
 </div></div>
@@ -3800,6 +3818,16 @@ Te escribía para saber si seguiste pensando en lo que charlaron con el Dr. en l
 <button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
 </div>
 </div></div>
+<div class="mc esp" id="mc_c6val" data-kw="contenido de valor por ahora no nutrir interes bajo mensual">
+<button class="mc-btn" onclick="togMc('mc_c6val')"><span class="mt">⏳ Contenido de valor · cada ~30 días</span><span class="mc-chev">▾</span></button>
+<div class="mc-body">
+<div class="when">Etapa: 🧊 Interés bajo – Nutrir lento, mientras sigue sin querer avanzar.</div>
+<div class="var">
+<div class="txt">Hola [NOMBRE], soy Cami, del equipo del Dr. Despontin. Te paso [CONTENIDO: video o nota del Dr. sobre tu procedimiento], por si te sirve para aclarar alguna duda. Cuando quieras retomar lo que charlaron con el Dr., avisame y vemos fechas para una nueva consulta o para el procedimiento.</div>
+<button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
+</div>
+<div class="note">💡 Antes de mandarlo, fijate qué le mandaste la última vez. Cambiá el contenido y variá un poco el texto, para que no sea el mismo copiado y pegado.</div>
+</div></div>
 <div class="mc inf" id="mc_c6rea" data-kw="reactivacion 3 a 6 meses">
 <button class="mc-btn" onclick="togMc('mc_c6rea')"><span class="mt">📋 Reactivación a los 3 a 6 meses</span><span class="mc-chev">▾</span></button>
 <div class="mc-body">
@@ -4106,6 +4134,15 @@ Cualquier duda que te surja, avisame. 😊</div>
 <button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
 </div>
 </div></div>
+<div class="mc env" id="mc_pago_prot" data-kw="pago protesis recordatorio reclamar saldo cirugia">
+<button class="mc-btn" onclick="togMc('mc_pago_prot')"><span class="mt">✉️ Recordatorio de pago de la prótesis (5 y 2 días hábiles antes)</span><span class="mc-chev">▾</span></button>
+<div class="mc-body">
+<div class="when">Solo si la prótesis la compra con el Dr. y el pago está pendiente. Sirve para recordarlo y para reclamarlo.</div>
+<div class="var">
+<div class="txt">Hola [NOMBRE], soy Cami, del equipo del Dr. Despontin. ¿Cómo estás? Te escribo para recordarte que está pendiente el pago de la prótesis, el saldo a pagar es de [MONTO]. Como te comenté, el pago puede hacerse hasta el [FECHA], que es el último día hábil previo a tu cirugía. Si necesitás coordinar algo, avisame.</div>
+<button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
+</div>
+</div></div>
 <div class="mc env" id="mc_ubicacion" data-kw="ubicacion horario recordatorio 48 hs cirugia direccion mapa">
 <button class="mc-btn" onclick="togMc('mc_ubicacion')"><span class="mt">✉️ Recordatorio de ubicación y horario (48 hs antes)</span><span class="mc-chev">▾</span></button>
 <div class="mc-body">
@@ -4143,10 +4180,11 @@ Si te surgió alguna duda de último momento, podés consultarme a mí o directa
 <div class="mc env" id="mc_postcirugia" data-kw="post cirugia noche seguimiento">
 <button class="mc-btn" onclick="togMc('mc_postcirugia')"><span class="mt">✉️ Seguimiento a la noche de la cirugía (~20 hs)</span><span class="mc-chev">▾</span></button>
 <div class="mc-body">
-<div class="when">La noche del día de la cirugía.</div>
+<div class="when">La noche del día de la cirugía. Completá el día y la hora del primer control.</div>
 <div class="var">
 <div class="txt">Hola [NOMBRE], soy Cami, del equipo del Dr. Despontin. ¿Cómo estás? ¿Cómo te sentís? Espero que estés descansando [TRANQUILA/TRANQUILO]. 😊
-Cualquier duda que tengas esta noche, escribile o llamá directamente al Dr. Despontin al 351-5179757.</div>
+Te recuerdo que tu primer control es [DÍA] a las [HORA].
+Cualquier duda que tengas esta noche, escribile o llamá directamente al Dr. Despontin al 351-5179757. Que pases una buena noche!</div>
 <button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
 </div>
 </div></div>
@@ -4264,12 +4302,21 @@ Contame cómo te sentís.</div>
 <div class="mc env" id="mc_mant" data-kw="mantenimiento vencido aviso descuento 10 nueva aplicacion">
 <button class="mc-btn" onclick="togMc('mc_mant')"><span class="mt">✉️ Aviso de mantenimiento</span><span class="mc-chev">▾</span></button>
 <div class="mc-body">
-<div class="when">Cuando llega el momento del mantenimiento (Botox 4 meses, hiperhidrosis 6, hialurónico 9, rinomodelación 12). El CRM lo avisa unos días antes, o si ya pasó la fecha ("mantenimiento vencido").</div>
+<div class="when">Cuando llega el momento del mantenimiento (Botox 4 meses, hiperhidrosis 6, hialurónico 9, rinomodelación 12). El CRM lo avisa unos días antes.</div>
 <div class="var">
 <div class="txt">Hola [NOMBRE], soy Cami, del equipo del Dr. Despontin. ¿Cómo estás? Te escribía porque hoy se cumplen [X MESES] desde tu [TRATAMIENTO]. Habitualmente es el tiempo en que el efecto del tratamiento comienza a disminuir. Quería saber cómo estás y, si querés, podemos agendar un turno con el Dr. para que te evalúe y vea si es necesario una nueva aplicación para mantener el resultado. Además, por ser paciente del Dr., si te realizás la aplicación de mantenimiento en los próximos 30 días, tenés un 10% de descuento. ¿Querés que coordinemos un turno?</div>
 <button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
 </div>
 <div class="note">💡 Si todavía no se cumplió el tiempo, cambiá "hoy se cumplen" por "en unos días se cumplen". El descuento vale solo durante los 30 días siguientes.</div>
+</div></div>
+<div class="mc env" id="mc_mant_venc" data-kw="mantenimiento vencido recuperacion nueva aplicacion efecto disminuir">
+<button class="mc-btn" onclick="togMc('mc_mant_venc')"><span class="mt">✉️ Mantenimiento vencido · recuperación</span><span class="mc-chev">▾</span></button>
+<div class="mc-body">
+<div class="when">Cuando ya pasó la fecha del mantenimiento y no se hizo la aplicación.</div>
+<div class="var">
+<div class="txt">Hola [NOMBRE], soy Cami, del equipo del Dr. Despontin. ¿Cómo estás? Hace un tiempo te hiciste [TRATAMIENTO] con el Dr. y habitualmente, en el tiempo que pasó desde que lo realizaste, los efectos desaparecieron o ya comienzan a disminuir. ¿Querés que veamos un turno para repetirlo?</div>
+<button class="cbtn" onclick="cpv(this)">📋 Copiar mensaje</button>
+</div>
 </div></div>
 </div></div>
 <div class="stage" id="s10">
